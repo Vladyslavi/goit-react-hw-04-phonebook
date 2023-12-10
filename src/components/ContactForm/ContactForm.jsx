@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
 import { Form, Label, Button, Input } from './ContactForm.styled';
-import { ReactComponent as AddIcon } from '../icons/add.svg';
+
 
 const ContactForm = ({ onSubmit }) => {
     const [name, setName] = useState('');
@@ -61,7 +61,6 @@ const ContactForm = ({ onSubmit }) => {
             </Label>
 
             <Button type="submit">
-                <AddIcon fill="#f08080" width="25" height="25" />
                 Add contact
             </Button>
         </Form>
